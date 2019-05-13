@@ -80,6 +80,7 @@ class com_wiris_plugin_storage_S3StorageAndCacheExample implements com_wiris_plu
 		}
 		catch (Exception $e) {
 			throw new Exception("Error: can't delete cache: " . Std::string($e->getMessage()));
+			exit(1);
 		}
 	}
 
